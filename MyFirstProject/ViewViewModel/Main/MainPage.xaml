@@ -26,18 +26,26 @@
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Button Grid.Row="0"
+                   BorderColor="Black"
+                   BorderWidth="5"
                    Grid.Column="0"
                    Text="Layouts"
                    Command="{Binding OnLayoutsMenuClicked}"/>
             <Button Grid.Row="0"
                    Grid.Column="1"
+                   BorderColor="Black"
+                   BorderWidth="5" 
                    Text="Image"
                    Command="{Binding OnImageMenuClicked}"/>
             <Button Grid.Row="1"
                    Grid.Column="0"
+                   BorderColor="Black"
+                   BorderWidth="5"
                    Text="Lists"
                    Command="{Binding OnListMenuClicked}"/>
             <Button Grid.Row="1"
+                   BorderColor="Black"
+                   BorderWidth="5"
                    Grid.Column="1"
                    Text="Controls"
                    Command="{Binding OnControlsMenuClicked}"/>
