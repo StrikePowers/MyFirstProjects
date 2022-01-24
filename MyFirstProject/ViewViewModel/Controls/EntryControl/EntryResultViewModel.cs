@@ -11,7 +11,7 @@ namespace MyFirstProject.ViewViewModel.Controls.EntryControl
 {
     public class EntryResultViewModel : BaseViewModel
     {
-        public string resultsText;
+        public string resultsText; 
 
         public EntryResultViewModel(string textInput)
         {
