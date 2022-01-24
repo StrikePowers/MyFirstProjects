@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Controls.ControlsMenuView"
+             Title = "{Binding Title}">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Padding="7">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Slider"
+                   Command="{Binding OnSliderClicked}"/>
+
+                <Button Grid.Row="0"
+                   Grid.Column="1"
+                   Text="Stepper"
+                   Command="{Binding OnStepperClicked}"/>
+
+                <Button Grid.Row="1"
+                   Grid.Column="0"
+                   Text="Swtich"
+                   Command="{Binding OnSwitchClicked}"/>
+
+                <Button Grid.Row="1"
+                   Grid.Column="1"
+                   Text="Entry"
+                   Command="{Binding OnEntryClicked}"/>
+            </Grid>
+            
+            <Button Text="Picker"
+                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+            
+            <Button Text="Date and Time Picker"
+                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

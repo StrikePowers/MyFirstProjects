@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Layouts.RelativeLayoutProject.RelativeLayoutProjectView" 
+             Title="{Binding Title}">
+    <RelativeLayout>
+        <BoxView Color="LimeGreen"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=0}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Constant=0}"/>
+        <Label Text="Relative!"
+                HorizontalOptions="Center"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=190}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=30}" />
+        <BoxView Color="Red"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Constant=-500}"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"/>
+        <BoxView Color="HotPink"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=-125}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Constant=-500}"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"/>
+        <BoxView Color="Blue"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Constant=-300}" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"/>
+        <BoxView Color="IndianRed"
+                 x:Name="bigBox"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=-125}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Constant=-300}" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"/>
+        <BoxView Color="White"
+                 RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=-110}"
+                 RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Constant=-285}"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Property=Width, Constant=10}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Property=Height, Constant=10}" 
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"/>
+    </RelativeLayout>
+</ContentPage>

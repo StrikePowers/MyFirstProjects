@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Controls.Switch.SwitchView"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="CenterAndExpand">
+            
+            <Label Text="Testing"
+                x:Name="label"
+                   FontSize="Large"
+                   TextColor="Blue"
+                   FontAttributes="Bold"/>
+
+            <StackLayout HorizontalOptions="Center">
+                <Switch IsToggled="True"
+                        Toggled="SwitchToggled"
+                        ThumbColor="Blue"
+                        OnColor="Green"/>
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

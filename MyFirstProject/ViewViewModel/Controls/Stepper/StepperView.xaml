@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Controls.Stepper.StepperView"
+             Title="{Binding Title}">
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label x:Name = "_rotatingLabel"
+                   Text="ROTATING TEXT:"
+                   FontSize="Large"
+                   FontAttributes="Bold, Italic"
+                   HorizontalOptions ="Center"
+                   VerticalOptions="CenterAndExpand"/>
+
+            <Stepper x:Name="_stepper"
+                     Maximum="360"
+                     Increment="18"
+                     BackgroundColor="Blue"
+                     HorizontalOptions="Center"/>
+
+            <Label x:Name="_displayLabel"
+                   FontAttributes="Bold"
+                   Text="{Binding Source={x:Reference _stepper},
+                      Path=Value,
+                      StringFormat='The Stepper value is {0:F0}'}"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

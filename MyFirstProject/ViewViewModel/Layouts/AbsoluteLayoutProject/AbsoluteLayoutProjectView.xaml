@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Layouts.AbsoluteLayoutProject.AbsoluteLayoutProjectView"
+             Title="{Binding Title}">
+    <AbsoluteLayout>
+        <Label Text="Absolute!"
+                 AbsoluteLayout.LayoutBounds=".5, .05, .17, .03"
+                 HorizontalOptions="Center"
+                 AbsoluteLayout.LayoutFlags="All"/>
+        
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="0.09, .2, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+        
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="0.36, .2, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+        
+        <BoxView Color="Bisque"
+                 AbsoluteLayout.LayoutBounds="0.63, .2, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+        
+        <BoxView Color="LightSkyBlue"
+                 AbsoluteLayout.LayoutBounds="0.90, .2, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView Color="Aquamarine"
+                 AbsoluteLayout.LayoutBounds="0.09, .3, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView Color="IndianRed"
+                 AbsoluteLayout.LayoutBounds="0.36, .3, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView Color="CornflowerBlue"
+                 AbsoluteLayout.LayoutBounds="0.63, .3, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView Color="HotPink"
+                 AbsoluteLayout.LayoutBounds="0.90, .3, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView Color="LimeGreen"
+                 AbsoluteLayout.LayoutBounds="0.09, .4, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView Color="MediumAquamarine"
+                 AbsoluteLayout.LayoutBounds="0.36, .4, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView Color="DarkGreen"
+                 AbsoluteLayout.LayoutBounds="0.63, .4, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+
+        <BoxView Color="Blue"
+                 AbsoluteLayout.LayoutBounds="0.90, .4, .17, .05"
+                 AbsoluteLayout.LayoutFlags="All"/>
+        
+        <Label Text="01"
+                 FontAttributes="Bold"
+                 AbsoluteLayout.LayoutBounds="0.09, .2, .17, .03"
+                 HorizontalOptions="Center"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="White"/>
+                
+        <Label Text="02"
+                 FontAttributes="Bold"
+                 HorizontalOptions="Center"  
+                 AbsoluteLayout.LayoutBounds="0.36, .2, .17, .03"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="PaleVioletRed"/>
+
+        <Label Text="03"
+                 FontAttributes="Bold"
+                 HorizontalOptions="Center"  
+                 AbsoluteLayout.LayoutBounds="0.63, .2, .17, .03"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="DarkOrange"/>
+        
+        <Label Text="04"
+                 FontAttributes="Bold"               
+                 HorizontalOptions="Center"
+                 AbsoluteLayout.LayoutBounds="0.90, .2, .17, .03"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="Purple"/>
+
+        <Label Text="05"
+                 FontAttributes="Bold"               
+                 AbsoluteLayout.LayoutBounds="0.09, .3, .17, .03"
+                 HorizontalOptions="Center"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="Green"/>
+
+        <Label Text="06"
+                 FontAttributes="Bold"               
+                 HorizontalOptions="Center"  
+                 AbsoluteLayout.LayoutBounds="0.36, .3, .17, .03"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="AntiqueWhite"/>
+
+        <Label Text="07"
+                 FontAttributes="Bold"               
+                 HorizontalOptions="Center"  
+                 AbsoluteLayout.LayoutBounds="0.63, .3, .17, .03"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="AliceBlue"/>
+
+        <Label Text="08"
+                 FontAttributes="Bold"               
+                 HorizontalOptions="Center"
+                 AbsoluteLayout.LayoutBounds="0.90, .3, .17, .03"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="Yellow"/>
+
+        <Label Text="09"
+                 FontAttributes="Bold"               
+                 AbsoluteLayout.LayoutBounds="0.09, .4, .17, .03"
+                 HorizontalOptions="Center"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="Red"/>
+
+        <Label Text="10"
+                 FontAttributes="Bold"               
+                 HorizontalOptions="Center"  
+                 AbsoluteLayout.LayoutBounds="0.36, .4, .17, .03"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="Orange"/>
+        
+        <Label Text="11"
+                 FontAttributes="Bold"               
+                 HorizontalOptions="Center"  
+                 AbsoluteLayout.LayoutBounds="0.63, .4, .17, .03"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="CornflowerBlue"/>
+
+        <Label Text="12"
+                 FontAttributes="Bold"               
+                 HorizontalOptions="Center"
+                 AbsoluteLayout.LayoutBounds="0.90, .4, .17, .03"
+                 AbsoluteLayout.LayoutFlags="All"
+                 TextColor="Aqua"/>
+
+
+    </AbsoluteLayout>
+</ContentPage>

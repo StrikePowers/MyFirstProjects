@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Image.ImageMenuView"
+            Title = "{Binding Title}">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Embedded Image"
+                   Command="{Binding OnEmbeddedImagesClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Embedded Image Project"
+                   Command="{Binding OnEmbeddedImageProjectClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="URL Image"
+                   Command="{Binding OnURLImageClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="URL Image Project"
+                   Command="{Binding OnURLImageProjectClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Cache Image"
+                   Command="{Binding OnCacheImageClicked}"/>
+            <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Activity Indicator"
+                   Command="{Binding OnActivityIndicatorClicked}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

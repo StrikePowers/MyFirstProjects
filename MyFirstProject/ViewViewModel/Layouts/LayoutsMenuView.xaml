@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModel.Layouts.LayoutsMenuView"
+             Title="{Binding Title}">
+
+    <StackLayout>
+        <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Absolute Layout"
+                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+        
+        <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Absolute Layout Project"
+                   Command="{Binding OnAbsoluteLayoutProjectClicked}"/>
+        
+        <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Relative Layout"
+                   Command="{Binding OnRelativeLayoutClicked}"/>
+        
+        <Button Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Relative Layout Project"
+                   Command="{Binding OnRelativeLayoutProjectClicked}"/>
+    </StackLayout>
+
+</ContentPage>
