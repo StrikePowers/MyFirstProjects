@@ -12,6 +12,7 @@ namespace MyFirstProject.Models
 
         //Controls
         public static string ControlsTitle = "Controls";
+        public static string DatePickerXamlTitle = "Date Picker";
         public static string StepperTitle = "Stepper";
         public static string SliderTitle = "Slider";
         public static string SwitchTitle = "Switch";

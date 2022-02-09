@@ -36,13 +36,14 @@
                    Grid.Column="1"
                    Text="Entry"
                    Command="{Binding OnEntryClicked}"/>
+                
             </Grid>
             
             <Button Text="Picker"
-                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+                   Command="{Binding OnPickerClicked}"/>
             
             <Button Text="Date and Time Picker"
-                   Command="{Binding OnAbsoluteLayoutClicked}"/>
+                   Command="{Binding OnDatePickClicked}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

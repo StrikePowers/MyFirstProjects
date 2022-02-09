@@ -4,7 +4,7 @@
              x:Class="MyFirstProject.ViewViewModel.Controls.Entry.EntryFormView"
              Title="{Binding Title}">
     
-    <ContentPage.Content>
+    
         <StackLayout>
             <Entry Placeholder= "Enter Text Here"
                    PlaceholderColor =" Blue"
@@ -14,13 +14,12 @@
                    WidthRequest="300"
                    HorizontalOptions="Center"/>
 
-
             <Button Text="Submit"
-                HorizontalOptions="Center"
+                HorizontalOptions="FillAndExpand"
                 FontAttributes="Bold"
                 TextColor="White"
                 BackgroundColor="Blue"
                 Command="{Binding OnEntryClicked}"/>
         </StackLayout>
-    </ContentPage.Content>
+   
 </ContentPage>

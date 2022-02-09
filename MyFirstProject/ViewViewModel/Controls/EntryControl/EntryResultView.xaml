@@ -2,16 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstProject.ViewViewModel.Controls.EntryControl.EntryResultView"
-             Title="{Binding Title}">
-
+             Title="{Binding Title}"
+             BackgroundColor="LightPink">
+    
     <StackLayout>
+        
         <Label Text="You Entered: "
-                HorizontalOptions="Center"
-                TextColor="Blue"/>
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="Blue"
+               FontSize="Large"
+               FontAttributes="Bold"/>
 
         <Label Text="{Binding ResultsText}"
-                TextColor="Red"
-                HorizontalOptions="Center"/>
+               VerticalOptions="Center"
+               TextColor="Red"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontAttributes="Bold"/>
 
     </StackLayout>
 
